@@ -46,7 +46,8 @@ public class Transmitter<T extends Package> {
     }
 
     //тут тип существует только на уровне переменной, дальше его нельзя использовать
-    // любой тип данных Package, который расширается от CharSequence
+    // любой тип данных Package, который расширается от CharSequence можно работать с множеством типов родителя. T это хардкод.
+    // в методе может не быть требуемого интерфейса
     public static IntStream convertToRow1(Package<? extends CharSequence> value){
         IntStream chars = value.getValue().chars();
         return  chars;
