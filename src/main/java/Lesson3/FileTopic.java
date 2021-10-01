@@ -19,6 +19,29 @@ public class FileTopic {
         System.out.println(file.getAbsolutePath());
     }
 
+    // reader и whiter другое поколение чтения/записи буферизиванный
+    public static void doBufferedReaderAndWriterDemo() {
+        File file = new File("D:/Lesson/JAVA/Lesson/GB/JAVA/LVL3/src/main/java/Lesson3/file.txt");
+        // Добавление в конце
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(file,true))){
+            bw.write("My name is GeekBrainds");
+            bw.append("My name is GeekBrainds");
+            bw.newLine();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+
+        try (BufferedReader br = new BufferedReader(new FileReader(file))){
+            // работает со структурой файла.
+            String line;
+            while ((line=br.readLine() )!= null){
+                System.out.println(line);
+            }
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
     // есть ограничение в конструкторе size
     public static void doBufferedStreamDemo() {
         // курсор ставиться на начало.
