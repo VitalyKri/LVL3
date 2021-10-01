@@ -9,8 +9,8 @@
         <module name="LVL3" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="LVL3" target="1.5" />
+    <bytecodeTargetLevel target="8">
+      <module name="LVL3" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

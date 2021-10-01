@@ -1,0 +1,29 @@
+.root{
+    -fx-font: 20px 'Roboto';
+    -fx-cursor: text;
+}
+.text-area:focused{
+    -fx-background-color: gold;
+}
+
+#textArea {
+    -fx-border-radius: 10px;
+    -fx-wrap-text: true;
+    -fx-alternative-row-fill-visible: true;
+    -fx-control-inner-background: #E3F2FD;
+}
+
+.scroll-pane{
+-fx-control-inner-background: #E3F2FD;
+-fx-background-color: #E3F2FD;
+}
+#sendButton{
+    -fx-border-radius: 10px;
+    -fx-graphic-text-gap: 10px;
+    -fx-background-color: #E3F2FD;
+
+}
+
+.DarkSkin{
+    -fx-background-color: black;
+}

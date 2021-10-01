@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet /css/Style.css?>
+
+<VBox fx:id="vbox" alignment="center" prefHeight="462.0" prefWidth="700.0" style="-fx-background-color: #E3F2FD;"
+      xmlns="http://javafx.com/javafx/8.0.291" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="Lesson2.Homework.OnlineChat.client.Controller">
+    <stylesheets>
+        <URL value="@Style.css"/>
+    </stylesheets>
+
+
+    <HBox fx:id="upperBox" alignment="CENTER" prefWidth="295.0">
+        <VBox>
+            <TextField fx:id="loginField" onAction="#sendMsg" promptText="Логин" HBox.hgrow="ALWAYS"/>
+            <CheckBox fx:id="checkReg" mnemonicParsing="false" onAction="#checkReg" text="Регистрация"/>
+        </VBox>
+
+        <VBox>
+            <PasswordField fx:id="passField" onAction="#tryToAuth" promptText="Пароль" HBox.hgrow="ALWAYS"/>
+            <TextField fx:id="nickField" managed="false" promptText="Ник" visible="false"/>
+        </VBox>
+        <VBox>
+            <Button onAction="#tryToAuth" text="Авторизоваться"/>
+            <Button fx:id="buttomReg" managed="false" onAction="#Registation" text="Зарегистрироваться"
+                    visible="false"/>
+        </VBox>
+
+
+    </HBox>
+
+    <HBox prefHeight="414.0" prefWidth="540.0" style="-fx-background-color: #E3F2FD;" VBox.vgrow="ALWAYS">
+        <VBox prefHeight="514.0" prefWidth="732.0" style="-fx-background-color: #E3F2FD;" HBox.hgrow="ALWAYS">
+
+            <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" maxWidth="-Infinity" prefHeight="408.0"
+                        style="-fx-background-color: #E3F2FD;">
+                <VBox fx:id="VBoxMsg" prefWidth="700.0" spacing="20.0" style="-fx-background-color: #E3F2FD;">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="50.0" top="10.0"/>
+                    </padding>
+                </VBox>
+            </ScrollPane>
+            <HBox fx:id="bottomPanel" managed="false" visible="false">
+                <TextField fx:id="textField" onAction="#sendMsg" promptText="Введите сообщение" HBox.hgrow="ALWAYS"/>
+                <Button fx:id="sendButton" onAction="#sendMsg" text="Send"/>
+            </HBox>
+
+        </VBox>
+
+        <ListView fx:id="clientsList" managed="false" onMouseReleased="#filterMsg" prefWidth="200.0"/>
+    </HBox>
+</VBox>
