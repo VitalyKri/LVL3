@@ -17,50 +17,50 @@ public class AuthService {
         throw new NullPointerException("Not fount connection.");
     }
 
-//    public static String getNickByLoginAndPass(String login, String pass) {
-//        Connection connection = getConnect();
-//        try {
-//
-//            Statement statement = connection.createStatement();
-//            ResultSet rs = statement.executeQuery("SELECT nickname, password FROM users WHERE login = '" + login + "'");
-//            int myHash = pass.hashCode();
-//            // 106438208
-//            if (rs.next()) {
-//                String nick = rs.getString(1);
-//                int dbHash = rs.getInt(2);
-//                if (myHash == dbHash) {
-//                    return nick;
-//                }
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        } finally {
-//            disconnect(connection);
-//        }
-//        throw new NullPointerException("Не верный пароль");
-//    }
+    public static String getNickByLoginAndPass(String login, String pass) {
+        Connection connection = getConnect();
+        try {
 
-//    public List<String> getBlackList(String userInBlackList) {
-//        List<String> nickList = new ArrayList<>();
-//        String sql = String.format("SELECT user_nickname,\n" +
-//                "       userBL_nickname\n" +
-//                "  FROM blackList\n" +
-//                "  where userBL_nickname = '%s'", userInBlackList);
-//        Connection connection = getConnect();
-//        try {
-//
-//            ResultSet resultSet = connection.createStatement().executeQuery(sql);
-//            while (resultSet.next()) {
-//                nickList.add(resultSet.getString("nickname_bl"));
-//            }
-//        } catch (SQLException throwables) {
-//            throwables.printStackTrace();
-//            throw new NullPointerException();
-//        } finally {
-//            disconnect(connection);
-//        }
-//        return nickList;
-//    }
+            Statement statement = connection.createStatement();
+            ResultSet rs = statement.executeQuery("SELECT nickname, password FROM users WHERE login = '" + login + "'");
+            int myHash = pass.hashCode();
+            // 106438208
+            if (rs.next()) {
+                String nick = rs.getString(1);
+                int dbHash = rs.getInt(2);
+                if (myHash == dbHash) {
+                    return nick;
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            disconnect(connection);
+        }
+        throw new NullPointerException("Не верный пароль");
+    }
+
+    public List<String> getBlackList(String userInBlackList) {
+        List<String> nickList = new ArrayList<>();
+        String sql = String.format("SELECT user_nickname,\n" +
+                "       userBL_nickname\n" +
+                "  FROM blackList\n" +
+                "  where userBL_nickname = '%s'", userInBlackList);
+        Connection connection = getConnect();
+        try {
+
+            ResultSet resultSet = connection.createStatement().executeQuery(sql);
+            while (resultSet.next()) {
+                nickList.add(resultSet.getString("nickname_bl"));
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+            throw new NullPointerException();
+        } finally {
+            disconnect(connection);
+        }
+        return nickList;
+    }
 
     public static  String addUsersInBL(String thisUserNick, String usersInBlackList) {
 
@@ -128,43 +128,43 @@ public class AuthService {
         return nickList.toString();
     }
 
-//    public static void addUser(String login, String pass, String nick) {
-//        Connection connection = getConnect();
-//        try {
-//            String query = "INSERT INTO users (login, password, nickname) VALUES (?, ?, ?);";
-//            PreparedStatement ps = connection.prepareStatement(query);
-//            ps.setString(1, login);
-//            ps.setInt(2, pass.hashCode());
-//            ps.setString(3, nick);
-//            ps.executeUpdate();
-//        } catch (SQLException e) {
-//            try {
-//                throw new Exception("Ошибка записи пользователя");
-//            } catch (Exception exception) {
-//                exception.printStackTrace();
-//            }
-//        } finally {
-//            disconnect(connection);
-//        }
-//    }
+    public static void addUser(String login, String pass, String nick) {
+        Connection connection = getConnect();
+        try {
+            String query = "INSERT INTO users (login, password, nickname) VALUES (?, ?, ?);";
+            PreparedStatement ps = connection.prepareStatement(query);
+            ps.setString(1, login);
+            ps.setInt(2, pass.hashCode());
+            ps.setString(3, nick);
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            try {
+                throw new Exception("Ошибка записи пользователя");
+            } catch (Exception exception) {
+                exception.printStackTrace();
+            }
+        } finally {
+            disconnect(connection);
+        }
+    }
 
-//    public static String updateNick(String login,  String nick) {
-//        Connection connection = getConnect();
-//        try {
-//            String query = "UPDATE users set nickname = ? where  login = ?";
-//            PreparedStatement ps = connection.prepareStatement(query);
-//            ps.setString(1, nick);
-//            ps.setString(2, login);
-//            ps.executeUpdate();
-//            return "Ник изменился на "+nick;
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        } finally {
-//            disconnect(connection);
-//        }
-//
-//        return "Ошибка обновления";
-//    }
+    public static String updateNick(String login,  String nick) {
+        Connection connection = getConnect();
+        try {
+            String query = "UPDATE users set nickname = ? where  login = ?";
+            PreparedStatement ps = connection.prepareStatement(query);
+            ps.setString(1, nick);
+            ps.setString(2, login);
+            ps.executeUpdate();
+            return "Ник изменился на "+nick;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            disconnect(connection);
+        }
+
+        return "Ошибка обновления";
+    }
 
 
     public static void disconnect(Connection connection) {
