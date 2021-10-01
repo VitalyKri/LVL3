@@ -87,8 +87,8 @@ public class ClientHandler implements Comparable {
 
                 if (str.startsWith("/reg")) {
                     String[] token = str.split(" ", 4);
-                    //AuthService.addUser(token[1],token[2],token[3]);
-                    //sendMsg("Сервер: Регистрация пользователя ("+token[1]+") успешна");
+                    AuthService.addUser(token[1],token[2],token[3]);
+                    sendMsg("Сервер: Регистрация пользователя ("+token[1]+") успешна");
                 }
 
             }
@@ -113,8 +113,8 @@ public class ClientHandler implements Comparable {
                 }  else if (str.startsWith("/newnick")) {
 
                     String[] token = str.split(" ", 2);
-                    //String mgs = AuthService.updateNick(this.login,token[1]);
-                    //sendMsg("Сервер: "+mgs);
+                    String mgs = AuthService.updateNick(this.login,token[1]);
+                    sendMsg("Сервер: "+mgs);
 
                 }
                 else if (str.startsWith("/subBL")) {
@@ -133,23 +133,23 @@ public class ClientHandler implements Comparable {
 
     public void authentication(String msg) throws IOException {
 
-//        String[] token = msg.split(" ");
-//        try {
-//            String currentNick = AuthService.getNickByLoginAndPass(token[1], token[2]);
-//            if (!serv.isNickBusy(currentNick)) {
-//                this.nick = currentNick;
-//                this.login = token[1];
-//                this.isAuth = true;
-//                sendMsg("/authok "+this.nick);
-//                serv.subscribe(this);
-//                serv.broadcastMsg("Сервер: пользователь (" + currentNick + ") в чате");
-//            } else {
-//                sendMsg("Под этим ником уже авторизовались");
-//            }
-//        } catch (NullPointerException e) {
-//            e.printStackTrace();
-//            sendMsg("Неверный логин/пароль");
-//        }
+        String[] token = msg.split(" ");
+        try {
+            String currentNick = AuthService.getNickByLoginAndPass(token[1], token[2]);
+            if (!serv.isNickBusy(currentNick)) {
+                this.nick = currentNick;
+                this.login = token[1];
+                this.isAuth = true;
+                sendMsg("/authok "+this.nick);
+                serv.subscribe(this);
+                serv.broadcastMsg("Сервер: пользователь (" + currentNick + ") в чате");
+            } else {
+                sendMsg("Под этим ником уже авторизовались");
+            }
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+            sendMsg("Неверный логин/пароль");
+        }
 
 
     }
