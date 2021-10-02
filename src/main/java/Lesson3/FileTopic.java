@@ -66,29 +66,24 @@ public class FileTopic {
         }
     }
 
-    // класс отвечающий за облегчение работы с данными, может конвертировать данные
+    // класс отвечающий за облегчение работы с данными, может конвертировать данные сразу
     public static void doDataStreamDemo() {
         // курсор ставиться на начало.
-        ByteArrayOutputStream bout = writeToByteArrayStream("hello, world");
-        try (DataOutputStream dos = new DataOutputStream(bout)) {
-            dos.writeUTF("hello, world!!");
+        try (DataOutputStream out = new DataOutputStream(new
+                FileOutputStream("demo.txt"))) {
+            out.writeInt(128);
+            out.writeLong(128L);
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        // запись
-        // читает.
-        try (DataInputStream dis = new DataInputStream(new ByteArrayInputStream(bout.toByteArray()))) {
-            int val;
-            // возвращает целиком
-
-            System.out.print( dis.readUTF());
-            while ((val = dis.read())!= -1){
-                System.out.print((char) val);
-            }
-        } catch (IOException e) {
+        try (DataInputStream in = new DataInputStream(new
+                FileInputStream("demo.txt"))) {
+            System.out.println(in.readInt());
+            System.out.println(in.readLong());
+        } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 
     // работа с файлом

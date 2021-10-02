@@ -68,7 +68,20 @@
       <recent name="D:\Lesson\JAVA\Lesson\GB\JAVA\LVL3\src\main\resources\fxml" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Car">
+    <configuration name="Car" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lesson3.current.Car" />
+      <module name="LVL3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lesson3.current.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FileTopic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lesson3.FileTopic" />
       <module name="LVL3" />
@@ -88,19 +101,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Lesson2.Homework.OnlineChat.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServerClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson2.Homework.OnlineChat.server.ServerClient" />
-      <module name="LVL3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lesson2.Homework.OnlineChat.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Car" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.StartServer" />
         <item itemvalue="Application.FileTopic" />
         <item itemvalue="Application.main" />
-        <item itemvalue="Application.ServerClient" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +160,8 @@
       <workItem from="1633098127067" duration="251000" />
       <workItem from="1633098667657" duration="6662000" />
       <workItem from="1633106378146" duration="1400000" />
-      <workItem from="1633107839748" duration="5452000" />
+      <workItem from="1633107839748" duration="6954000" />
+      <workItem from="1633154066287" duration="1355000" />
     </task>
     <servers />
   </component>
@@ -192,10 +193,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="549" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1633099499503" />
-    <state x="1245" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1632854684128">
+    <state x="1245" y="221" width="464" height="648" key="#com.intellij.ide.util.MemberChooser" timestamp="1633114514702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1632854684128" />
+    <state x="1245" y="221" width="464" height="648" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1633114514702" />
     <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1632766764992">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -216,38 +217,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1633106039001" />
-    <state width="1877" height="343" key="GridCell.Tab.0.bottom" timestamp="1633112347735">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1633114864923">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633112347735" />
-    <state width="1877" height="343" key="GridCell.Tab.0.center" timestamp="1633112347735">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633114864923" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1633114864923">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633112347735" />
-    <state width="1877" height="343" key="GridCell.Tab.0.left" timestamp="1633112347735">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633114864923" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1633114864923">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633112347735" />
-    <state width="1877" height="343" key="GridCell.Tab.0.right" timestamp="1633112347735">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633114864923" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1633114864923">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633112347735" />
-    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1633112347735">
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633114864923" />
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1633114864915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633112347735" />
-    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1633112347735">
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633114864915" />
+    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1633114864915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633112347735" />
-    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1633112347735">
+    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633114864915" />
+    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1633114864915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633112347735" />
-    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1633112347735">
+    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633114864915" />
+    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1633114864915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633112347735" />
+    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633114864915" />
     <state width="208" height="471" key="HiddenNamespacesPopup" timestamp="1633099532720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
