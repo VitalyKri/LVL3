@@ -46,30 +46,7 @@ public class ClientHandler implements Comparable {
         }
     }
 
-    /*public void readMessages() throws IOException {
-        while (true) {
-            String str = in.readUTF();
-            System.out.println("Client " + str);
-            // если не авторизовался запускаем ветку, авторизация, регистрация, иначе можем отправлять сообщения
-            if (!this.isAuth){
-                if (str.startsWith("/auth")) {
-                    authentication(str);
-                }
-            } else {
-                if (str.equals("/end")) {
-                    out.writeUTF("/serverclosed");
-                    break;
-                } else if (str.startsWith("/w")) {
-                    serv.sendMsg(str.replace("/w","/w "+this.nick));
-                    sendMsg(str);
-                } else {
-                    serv.broadcastMsg(nick + ": " + str);
-                }
 
-            }
-
-        }
-    }*/
 
     public boolean nickInBlackList(String nick ){
         return blacklist.contains(nick);

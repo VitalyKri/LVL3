@@ -21,9 +21,11 @@ public class AuthService {
         Connection connection = getConnect();
         try {
 
-            Statement statement = connection.createStatement();
-            ResultSet rs = statement.executeQuery("SELECT nickname, password FROM users WHERE login = '" + login + "'");
+            PreparedStatement ps  = connection.prepareStatement("SELECT nickname, password FROM users WHERE login = ?");
+            ps.setString(1,login);
+            ResultSet rs = ps.executeQuery();
             int myHash = pass.hashCode();
+
             // 106438208
             if (rs.next()) {
                 String nick = rs.getString(1);

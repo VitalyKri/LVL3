@@ -16,10 +16,38 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:dev3" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6144121f-170b-45b7-93e0-eccc9c80caff" name="Default Changelist" comment="" />
+    <list default="true" id="6144121f-170b-45b7-93e0-eccc9c80caff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/JAVAFX.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JAVAFX/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JAVAFX/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LVL2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LVL2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LVL2/homeworks/OnlineChat/server/AuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LVL2/out/production/LVL2/Коллекция.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../LVL2/out/production/LVL2/Коллекция.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/client/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/client/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/client/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/client/sample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/main.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/main.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/server/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/server/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/server/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lesson2/Homework/OnlineChat/client/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lesson2/Homework/OnlineChat/client/Controller$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lesson2/Homework/OnlineChat/client/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lesson2/Homework/OnlineChat/client/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lesson2/Homework/OnlineChat/server/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lesson2/Homework/OnlineChat/server/AuthService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lesson2/Homework/OnlineChat/server/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lesson2/Homework/OnlineChat/server/ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lesson3/FileTopic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lesson3/FileTopic.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,10 +62,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_COMMON_BRANCH" value="main" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1yjVteHWwLwjNX7T4mWPmiWXAjW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,7 +81,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target/classes" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -68,7 +99,7 @@
       <recent name="D:\Lesson\JAVA\Lesson\GB\JAVA\LVL3\src\main\resources\fxml" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Car">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Car" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lesson3.current.Car" />
       <module name="LVL3" />
@@ -95,7 +126,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lesson2.Homework.OnlineChat.client.Main" />
       <module name="LVL3" />
       <extension name="coverage">
@@ -134,11 +165,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Car" />
+      <item itemvalue="Application.FileTopic" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.main" />
+      <item itemvalue="Application.StartServer" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Car" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.StartServer" />
+        <item itemvalue="Application.Car" />
         <item itemvalue="Application.FileTopic" />
         <item itemvalue="Application.main" />
       </list>
@@ -162,6 +200,8 @@
       <workItem from="1633106378146" duration="1400000" />
       <workItem from="1633107839748" duration="6954000" />
       <workItem from="1633154066287" duration="1355000" />
+      <workItem from="1633156183053" duration="2243000" />
+      <workItem from="1633248534380" duration="6719000" />
     </task>
     <servers />
   </component>
@@ -173,7 +213,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev3" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -189,14 +241,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1633103798275" />
-    <state x="549" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1633099499503">
+    <state x="549" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1633251637724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="549" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1633099499503" />
-    <state x="1245" y="221" width="464" height="648" key="#com.intellij.ide.util.MemberChooser" timestamp="1633114514702">
+    <state x="549" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1633251637724" />
+    <state x="1245" y="221" width="464" height="648" key="#com.intellij.ide.util.MemberChooser" timestamp="1633254776099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="221" width="464" height="648" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1633114514702" />
+    <state x="1245" y="221" width="464" height="648" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1633254776099" />
     <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1632766764992">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -217,46 +269,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1633106039001" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1633114864923">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1633252800620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633114864923" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1633114864923">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633252800620" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1633252800620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633114864923" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1633114864923">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633252800620" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1633252800620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633114864923" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1633114864923">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633252800620" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1633252800620">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633114864923" />
-    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1633114864915">
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633252800620" />
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1633252686929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633114864915" />
-    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1633114864915">
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633252686929" />
+    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1633252686928">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633114864915" />
-    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1633114864915">
+    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633252686928" />
+    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1633252686928">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633114864915" />
-    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1633114864915">
+    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633252686928" />
+    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1633252686928">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633114864915" />
+    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633252686928" />
     <state width="208" height="471" key="HiddenNamespacesPopup" timestamp="1633099532720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="208" height="471" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1633099532720" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1632852748714">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1633251602179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1632852748714" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1633251602179" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1633156228591">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1633156228591" />
     <state x="803" y="293" width="749" height="649" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1633100059316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -285,16 +341,36 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/server/AuthService.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Lesson3/main.java</url>
           <line>27</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/client/Controller.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/server/ServerClient.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/server/ClientHandler.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/server/AuthService.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="rs" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

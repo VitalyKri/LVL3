@@ -19,8 +19,6 @@ import java.net.Socket;
 
 
 public class Controller {
-    @FXML
-    TextArea textArea;
 
 
     @FXML
@@ -44,6 +42,8 @@ public class Controller {
     @FXML
     VBox VBoxMsg;
 
+    LocalChat localChat;
+
     Socket socket;
     DataInputStream in;
     DataOutputStream out;
@@ -53,11 +53,6 @@ public class Controller {
 
     private boolean isAuthorized;
 
-    Font fontNick = new Font("System Bold", 12.0);
-    Font fontText = new Font(14.0);
-    Insets panePadding = new Insets(0, 10, 40, 10);
-
-    String focusNick;
     String nick;
 
     public void setAuthorized(boolean isAuthorized) {
@@ -96,7 +91,7 @@ public class Controller {
 
     public void sendMsg() {
         try {
-
+            String focusNick = localChat.getFocusNick();
             String msg = focusNick.equals("all") ? textField.getText():"/w "+focusNick+" "+textField.getText();
             out.writeUTF(msg);
             textField.clear();
@@ -106,25 +101,6 @@ public class Controller {
         }
     }
 
-    public void filterMsg() {
-       focusNick = clientsList.getFocusModel().getFocusedItem();
-        Platform.runLater(() -> {
-            for (Node line : VBoxMsg.getChildren()
-            ) {
-                line.setVisible(focusNick.equals("all") || line.getId().contains(nick) || line.getId().contains(focusNick));
-                line.setManaged(focusNick.equals("all") || line.getId().contains(nick) || line.getId().contains(focusNick));
-            }
-        });
-
-
-    }
-
-    public void filterMsg(Node line) {
-        Platform.runLater(() -> {
-                line.setVisible(focusNick.equals("all")|| line.getId().contains(nick) || line.getId().contains(focusNick));
-                line.setManaged(focusNick.equals("all") || line.getId().contains(nick) || line.getId().contains(focusNick));
-        });
-    }
 
     public void sendEndSocket() {
         try {
@@ -172,6 +148,9 @@ public class Controller {
         }
 
     }
+    public void filterMsg() {
+       localChat.setFocusNick(clientsList.getFocusModel().getFocusedItem());
+    }
 
     public void readMsg() {
         try {
@@ -198,7 +177,7 @@ public class Controller {
             if (str.startsWith("/clientslist ")) {
                 String[] tokens = str.split(" ");
                 Platform.runLater(() -> {
-                    String oldFocus = focusNick;
+                    String oldFocus = localChat.getFocusNick();
                     FocusModel<String> fmClient = clientsList.getFocusModel();
                     boolean focusFind = false;
                     clientsList.getItems().clear();
@@ -211,20 +190,13 @@ public class Controller {
                     }
                     if (!focusFind){
                         fmClient.focus(0);
-                        filterMsg();
+                        localChat.filterMsgAll();
                     }
                 });
             } else {
-                addLineMessage(str);
+                localChat.addLineMessage(str);
             }
         }
-    }
-
-    public void addLineMessage(String mgs) {
-        Platform.runLater(() -> {
-            HBox hBox = getLineMsg(mgs);
-            VBoxMsg.getChildren().add(hBox);
-        });
     }
 
     public void readNotAuthMsg() throws IOException {
@@ -234,58 +206,11 @@ public class Controller {
                 if (str.startsWith("/authok")) {
                     setAuthorized(true);
                     this.nick = str.replace("/authok ", "");
-                    addLineMessage("Сервер: Авторизация успешна");
+                    localChat = new LocalChat(this.nick,"all",VBoxMsg);
+                    localChat.addLineMessage("Сервер: Авторизация успешна");
                     break;
-                } else {
-                    Platform.runLater(() -> {
-                        VBoxMsg.getChildren().clear();
-                    });
-                    if (str.equals("/serverclosed")) {
-                        break;
-                    }
-                    addLineMessage(str);
                 }
             }
         }
-    }
-
-
-    public HBox getLineMsg(String msg) {
-
-        String[] token = msg.split(": ");
-
-        Label labelNick = new Label();
-        labelNick.setLayoutX(10);
-        labelNick.setMaxWidth(300);
-        labelNick.setPrefHeight(30);
-        labelNick.setText(token.length == 1 ? "" : token[0]);
-        labelNick.setFont(fontNick);
-        labelNick.setMaxWidth(300);
-
-        Label labelText = new Label();
-        labelText.setLayoutX(10);
-        labelText.setLayoutY(30);
-        labelText.setMaxWidth(300);
-        labelText.setText(token.length == 1 ? token[0] : token[1]);
-        labelText.setFont(fontText);
-        labelText.setWrapText(true);
-
-        VBox vBox = new VBox();
-        vBox.setStyle("-fx-background-color: #FFFFFF;");
-        vBox.getChildren().add(labelNick);
-        vBox.getChildren().add(labelText);
-        vBox.setPadding(panePadding);
-
-        Pane pane = new Pane();
-        pane.setStyle("-fx-background-color: #FFFFFF;");
-        pane.getChildren().add(vBox);
-
-
-        HBox hBox = new HBox();
-        hBox.setId("message_" + token[0]);
-        hBox.setAlignment((token.length == 1 || token[0].equals(this.nick)) ? Pos.TOP_RIGHT : Pos.TOP_LEFT);
-        hBox.getChildren().add(pane);
-        filterMsg(hBox);
-        return hBox;
     }
 }
