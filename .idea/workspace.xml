@@ -37,16 +37,6 @@
       <change beforePath="$PROJECT_DIR$/../LVL2/homeworks/OnlineChat/server/AuthService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../LVL2/out/production/LVL2/Коллекция.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../LVL2/out/production/LVL2/Коллекция.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/client/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/client/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/client/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/client/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/main.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/main.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/server/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/server/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/server/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lesson2/Homework/OnlineChat/client/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lesson2/Homework/OnlineChat/client/Controller$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lesson2/Homework/OnlineChat/client/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lesson2/Homework/OnlineChat/client/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lesson2/Homework/OnlineChat/server/AuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lesson2/Homework/OnlineChat/server/AuthService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lesson2/Homework/OnlineChat/server/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lesson2/Homework/OnlineChat/server/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lesson3/FileTopic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lesson3/FileTopic.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +191,7 @@
       <workItem from="1633107839748" duration="6954000" />
       <workItem from="1633154066287" duration="1355000" />
       <workItem from="1633156183053" duration="2243000" />
-      <workItem from="1633248534380" duration="6719000" />
+      <workItem from="1633248534380" duration="8682000" />
     </task>
     <servers />
   </component>
@@ -245,10 +235,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="549" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1633251637724" />
-    <state x="1245" y="221" width="464" height="648" key="#com.intellij.ide.util.MemberChooser" timestamp="1633254776099">
+    <state x="1245" y="221" width="464" height="648" key="#com.intellij.ide.util.MemberChooser" timestamp="1633255927957">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="221" width="464" height="648" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1633254776099" />
+    <state x="1245" y="221" width="464" height="648" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1633255927957" />
     <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1632766764992">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -269,38 +259,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1633106039001" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1633252800620">
+    <state width="1877" height="343" key="GridCell.Tab.0.bottom" timestamp="1633257638971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633252800620" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1633252800620">
+    <state width="1877" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633257638971" />
+    <state width="1877" height="343" key="GridCell.Tab.0.center" timestamp="1633257638971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633252800620" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1633252800620">
+    <state width="1877" height="343" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633257638971" />
+    <state width="1877" height="343" key="GridCell.Tab.0.left" timestamp="1633257638971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633252800620" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1633252800620">
+    <state width="1877" height="343" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633257638971" />
+    <state width="1877" height="343" key="GridCell.Tab.0.right" timestamp="1633257638971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633252800620" />
-    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1633252686929">
+    <state width="1877" height="343" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633257638971" />
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1633257638861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633252686929" />
-    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1633252686928">
+    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633257638861" />
+    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1633257638861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633252686928" />
-    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1633252686928">
+    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633257638861" />
+    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1633257638861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633252686928" />
-    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1633252686928">
+    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633257638861" />
+    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1633257638861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633252686928" />
+    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633257638861" />
     <state width="208" height="471" key="HiddenNamespacesPopup" timestamp="1633099532720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -346,11 +336,6 @@
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/client/Controller.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Lesson2/Homework/OnlineChat/server/ServerClient.java</url>
           <line>8</line>
           <option name="timeStamp" value="20" />
@@ -369,7 +354,10 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="rs" language="JAVA" />
+        <watch expression="(HBoxWithComment) VBoxMsg.getChildren().get(sizeChat - i)" language="JAVA" />
+        <watch expression="VBoxMsg.getChildren().get(sizeChat - i)" language="JAVA" />
+        <watch expression="VBoxMsg.getChildren().get(3)" language="JAVA" />
+        <watch expression="VBoxMsg.getChildren().get(2)" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
