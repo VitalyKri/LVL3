@@ -14,16 +14,18 @@ import javafx.scene.text.Font;
 
 import java.io.*;
 
-public class LocalChat /*implements SavebleLocalFile */{
+public class LocalChat implements SavebleLocalFile {
 
     @FXML
     private VBox VBoxMsg;
     private String nick;
     private String focusNick;
-    public LocalChat(String nick,String focusNick,VBox VBoxMsg) {
+
+    public LocalChat(String nick, String focusNick, VBox VBoxMsg) {
         this.VBoxMsg = VBoxMsg;
         this.nick = nick;
         this.focusNick = focusNick;
+        readingTheStream();
     }
 
     public String getFocusNick() {
@@ -54,8 +56,8 @@ public class LocalChat /*implements SavebleLocalFile */{
     }
 
     public void filterMsg(Node line) {
-       Platform.runLater(() -> {
-            line.setVisible(focusNick.equals("all")|| line.getId().contains(nick) || line.getId().contains(focusNick));
+        Platform.runLater(() -> {
+            line.setVisible(focusNick.equals("all") || line.getId().contains(nick) || line.getId().contains(focusNick));
             line.setManaged(focusNick.equals("all") || line.getId().contains(nick) || line.getId().contains(focusNick));
         });
     }
@@ -110,24 +112,35 @@ public class LocalChat /*implements SavebleLocalFile */{
         return hBox;
     }
 
-//    @Override
-//    public BufferedOutputStream writeToStream() {
-//
-//        try (BufferedOutputStream bos = new BufferedOutputStream
-//                (new FileOutputStream("history_"+nick+".txt"))){
-//             int sizeChat = VBoxMsg.getChildren().size();
-//            for (int i = 0; i < 100; i++) {
-//                String msg = ((HBoxWithComment) VBoxMsg.getChildren().get(sizeChat-i)).getComment();
-//            }
-//
-//        }catch (IOException e){e.printStackTrace();}
-//
-//
-//        return null;
-//    }
-//
-//    @Override
-//    public void readingTheStream(BufferedInputStream bis) {
-//
-//    }
+    @Override
+    public BufferedWriter writeToStream() {
+
+        try (BufferedWriter bos = new BufferedWriter(new FileWriter("history" + this.nick + ".txt"))) {
+            int sizeChat = VBoxMsg.getChildren().size();
+            int i = 0;
+            while (i < sizeChat) {
+                String msg = ((HBoxWithComment) VBoxMsg.getChildren().get(i)).getComment();
+                bos.write(msg);
+                bos.newLine();
+                i++;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        return null;
+    }
+
+    @Override
+    public void readingTheStream() {
+        String str;
+        try (BufferedReader br = new BufferedReader(new FileReader("history" + this.nick + ".txt"))) {
+            while ((str = br.readLine()) != null) {
+                addLineMessage(str);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
