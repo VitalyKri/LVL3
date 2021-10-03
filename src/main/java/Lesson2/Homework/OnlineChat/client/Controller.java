@@ -105,6 +105,9 @@ public class Controller {
     public void sendEndSocket() {
         try {
             out.writeUTF("/end");
+            if (localChat != null){
+                localChat.writeToStream();
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
