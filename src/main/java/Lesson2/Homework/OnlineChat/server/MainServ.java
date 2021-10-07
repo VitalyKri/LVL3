@@ -6,28 +6,28 @@ import java.net.Socket;
 import java.util.*;
 
 public class MainServ {
-    private Map<String, ClientHandler> clients;
+    private PoolClientHandler<String,ClientHandler> poolClientHandler;
 
     public MainServ() {
-        clients = new HashMap<>();
+        poolClientHandler = new PoolClientHandler();
         ServerSocket server = null;
         Socket socket = null;
-
         addScanner();
 
         try {
-
             server = new ServerSocket(8181);
             System.out.println("Сервер запущен!");
             while (true) {
                 socket = server.accept();
-                new ClientHandler(this, socket);
+                poolClientHandler.addThread(new ClientHandler(this, socket));
+                ;
                 System.out.println("Клиент подключился!");
             }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             try {
+                poolClientHandler.getService().shutdown();
                 socket.close();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -55,53 +55,31 @@ public class MainServ {
     }
 
     public void subscribe(ClientHandler client) {
-        clients.put(client.getNick(), client);
+        poolClientHandler.addClient(client.getNick(), client);
         broadcastClientsList();
     }
 
     public boolean isNickBusy(String nick) {
-        return clients.get(nick) != null;
+        return poolClientHandler.getClient(nick) != null;
     }
 
-    public void upsubscribe(ClientHandler client) {
-        clients.remove(client.getNick());
+    public void upsubscribe(String nick) {
+        poolClientHandler.deleteClient(nick);
         broadcastClientsList();
     }
 
     public void broadcastMsg(String msg) {
-        Iterator<String> iterator = clients.keySet().iterator();
+        Iterator<String> iterator = poolClientHandler.getIterator();
         while (iterator.hasNext()) {
-            clients.get(iterator.next()).sendMsg(msg);
+            poolClientHandler.getClient(iterator.next()).sendMsg(msg);
         }
     }
 
-    /*public void sendMsg(String msg) {
-        try {
-            if (msg.startsWith("/w")){
-                String[] token = msg.split(" ");
-                ClientHandler client = clients.get(token[2]);
-                msg = msg.replace("/w "+token[1]+" "+token[2],"/w "+token[1]+" :");
-                client.sendMsg(msg);
-            } else {
-                Iterator<String> iterator = clients.keySet().iterator();
-                if (iterator.hasNext()){
-                    clients.get(iterator.next()).sendMsg(msg);
-                }
-            }
-
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
-    }*/
-
     public void sendMsg(String msg) {
         try {
-
-            Iterator<String> iterator = clients.keySet().iterator();
+            Iterator<String> iterator = poolClientHandler.getIterator();
             if (iterator.hasNext()) {
-                clients.get(iterator.next()).sendMsg(msg);
-
+                poolClientHandler.getClient(iterator.next()).sendMsg(msg);
             }
 
         } catch (Exception e) {
@@ -111,7 +89,7 @@ public class MainServ {
 
     public void sendPersonalMsg(ClientHandler from, String toNick, String msg) {
         try {
-            ClientHandler client = clients.get(toNick);
+            ClientHandler client = poolClientHandler.getClient(toNick);
             client.sendMsg(from.getNick() + ": " + msg);
         } catch (Exception e) {
             e.printStackTrace();
@@ -121,15 +99,15 @@ public class MainServ {
     public void broadcastClientsList() {
         StringBuilder sb = new StringBuilder();
         sb.append("/clientslist all ");
-        Set<String> keys = clients.keySet();
-        for (String key : keys
+        Set<String> nicks = poolClientHandler.getClients().keySet();
+        for (String nick : nicks
         ) {
-            sb.append(clients.get(key).getNick() + " ");
+            sb.append(nick + " ");
         }
         String out = sb.toString();
-        for (String key : keys
+        for (String nick : nicks
         ) {
-            clients.get(key).sendMsg(out);
+            poolClientHandler.getClient(nick).sendMsg(out);
         }
     }
 }
