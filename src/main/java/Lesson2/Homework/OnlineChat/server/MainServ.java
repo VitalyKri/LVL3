@@ -4,15 +4,18 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class MainServ {
     private Map<String, ClientHandler> clients;
 
+    ExecutorService service;
     public MainServ() {
         clients = new HashMap<>();
         ServerSocket server = null;
         Socket socket = null;
-
+        service = Executors.newCachedThreadPool();
         addScanner();
 
         try {
@@ -21,13 +24,14 @@ public class MainServ {
             System.out.println("Сервер запущен!");
             while (true) {
                 socket = server.accept();
-                new ClientHandler(this, socket);
+                addThread(new ClientHandler(this, socket));
                 System.out.println("Клиент подключился!");
             }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             try {
+                service.shutdown();
                 socket.close();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -75,26 +79,6 @@ public class MainServ {
         }
     }
 
-    /*public void sendMsg(String msg) {
-        try {
-            if (msg.startsWith("/w")){
-                String[] token = msg.split(" ");
-                ClientHandler client = clients.get(token[2]);
-                msg = msg.replace("/w "+token[1]+" "+token[2],"/w "+token[1]+" :");
-                client.sendMsg(msg);
-            } else {
-                Iterator<String> iterator = clients.keySet().iterator();
-                if (iterator.hasNext()){
-                    clients.get(iterator.next()).sendMsg(msg);
-                }
-            }
-
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
-    }*/
-
     public void sendMsg(String msg) {
         try {
 
@@ -131,6 +115,19 @@ public class MainServ {
         ) {
             clients.get(key).sendMsg(out);
         }
+    }
+
+    public void addThread(ClientHandler clientHandler){
+        service.execute(()->{
+            try {
+                clientHandler.readMessages();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                clientHandler.closeConnect();
+            }
+            this.upsubscribe(clientHandler);
+        });
     }
 }
 
