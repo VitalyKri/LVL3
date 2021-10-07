@@ -118,7 +118,7 @@ public class LocalChat implements SavebleLocalFile {
         try (BufferedWriter bos = new BufferedWriter(new FileWriter("history" + this.nick + ".txt"))) {
             int sizeChat = VBoxMsg.getChildren().size();
             int i = 0;
-            while (i < sizeChat) {
+            while (i < sizeChat && i <100) {
                 String msg = ((HBoxWithComment) VBoxMsg.getChildren().get(i)).getComment();
                 bos.write(msg);
                 bos.newLine();
