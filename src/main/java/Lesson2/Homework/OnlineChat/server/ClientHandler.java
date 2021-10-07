@@ -25,28 +25,10 @@ public class ClientHandler implements Comparable {
             this.in = new DataInputStream(socket.getInputStream());
             this.out = new DataOutputStream(socket.getOutputStream());
 
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        readMessages();
-
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    } finally {
-                        closeConnect();
-                    }
-                    serv.upsubscribe(ClientHandler.this);
-
-                }
-            }).start();
-
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
-
 
     public boolean nickInBlackList(String nick ){
         return blacklist.contains(nick);
@@ -157,6 +139,7 @@ public class ClientHandler implements Comparable {
 
     public void closeConnect() {
         try {
+            serv.upsubscribe(nick);
             in.close();
         } catch (IOException e) {
             e.printStackTrace();
