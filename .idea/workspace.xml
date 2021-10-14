@@ -26,6 +26,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6144121f-170b-45b7-93e0-eccc9c80caff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../VTB1/src/main/java/base/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VTB1/src/main/java/base/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VTB1/src/main/java/base/Catalog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VTB1/src/main/java/base/MainClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VTB1/src/main/java/base/Reader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VTB1/src/main/java/base/Review.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/libraries/JAVAFX.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
@@ -36,15 +42,12 @@
       <change beforePath="$PROJECT_DIR$/../LVL2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LVL2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LVL2/homeworks/OnlineChat/server/AuthService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../LVL2/out/production/LVL2/Коллекция.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../LVL2/out/production/LVL2/Коллекция.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson5/Homework/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson5/Homework/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson5/Homework/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson5/Homework/MainClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson5/Homework/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson5/Homework/Race.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson5/Homework/Tunnel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson5/Homework/Tunnel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lesson5/Homework/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lesson5/Homework/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lesson5/Homework/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lesson5/Homework/MainClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LVL3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LVL3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Lesson5/Homework/Race.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lesson5/Homework/Race.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Lesson5/Homework/Tunnel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lesson5/Homework/Tunnel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/LVL3.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,45 +88,20 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Lesson\JAVA\Lesson\GB\JAVA\LVL3\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Lesson6" />
+      <recent name="Lesson1.Homework" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Lesson\JAVA\Lesson\GB\JAVA\LVL3\target\classes" />
       <recent name="D:\Lesson\JAVA\Lesson\GB\JAVA\LVL3\src\main\resources" />
       <recent name="D:\Lesson\JAVA\Lesson\GB\JAVA\LVL3\src\main\resources\fxml" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Lesson1.Homework" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Lesson\JAVA\Lesson\GB\JAVA\LVL3\src\main\resources" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.MainClass">
-    <configuration name="Classwork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson4.Homework.Classwork" />
-      <module name="LVL3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lesson4.Homework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson2.Homework.OnlineChat.client.Main" />
-      <module name="LVL3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lesson2.Homework.OnlineChat.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MathOperationTest">
     <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lesson5.Homework.MainClass" />
       <module name="LVL3" />
@@ -137,46 +115,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StartServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson2.Homework.OnlineChat.server.StartServer" />
+    <configuration name="MathOperationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LVL3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Lesson2.Homework.OnlineChat.server.*" />
+          <option name="PATTERN" value="Lesson6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="Lesson6" />
+      <option name="MAIN_CLASS_NAME" value="Lesson6.MathOperationTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadABC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson4.Homework.ThreadABC" />
+    <configuration name="MathOperationTest.do1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LVL3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Lesson4.Homework.*" />
+          <option name="PATTERN" value="Lesson6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="Lesson6" />
+      <option name="MAIN_CLASS_NAME" value="Lesson6.MathOperationTest" />
+      <option name="METHOD_NAME" value="do1Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MathOperationTest.shouldSumSuccessfillyWhenToValidDigitsPassed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LVL3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lesson6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lesson6" />
+      <option name="MAIN_CLASS_NAME" value="Lesson6.MathOperationTest" />
+      <option name="METHOD_NAME" value="shouldSumSuccessfillyWhenToValidDigitsPassed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MathOperationTest.testSumSuccessfillyCalculationWhenTwoValidDigitsPassed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LVL3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lesson6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lesson6" />
+      <option name="MAIN_CLASS_NAME" value="Lesson6.MathOperationTest" />
+      <option name="METHOD_NAME" value="testSumSuccessfillyCalculationWhenTwoValidDigitsPassed" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.StartServer" />
-      <item itemvalue="Application.Classwork" />
-      <item itemvalue="Application.ThreadABC" />
       <item itemvalue="Application.MainClass" />
+      <item itemvalue="JUnit.MathOperationTest.do1Test" />
+      <item itemvalue="JUnit.MathOperationTest.shouldSumSuccessfillyWhenToValidDigitsPassed" />
+      <item itemvalue="JUnit.MathOperationTest.testSumSuccessfillyCalculationWhenTwoValidDigitsPassed" />
+      <item itemvalue="JUnit.MathOperationTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MathOperationTest" />
+        <item itemvalue="JUnit.MathOperationTest.shouldSumSuccessfillyWhenToValidDigitsPassed" />
+        <item itemvalue="JUnit.MathOperationTest.testSumSuccessfillyCalculationWhenTwoValidDigitsPassed" />
+        <item itemvalue="JUnit.MathOperationTest.do1Test" />
         <item itemvalue="Application.MainClass" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.StartServer" />
-        <item itemvalue="Application.ThreadABC" />
-        <item itemvalue="Application.Classwork" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +218,8 @@
       <workItem from="1633453939316" duration="3197000" />
       <workItem from="1633616351772" duration="9975000" />
       <workItem from="1633713107365" duration="5247000" />
+      <workItem from="1634058902498" duration="5133000" />
+      <workItem from="1634211260388" duration="2457000" />
     </task>
     <servers />
   </component>
@@ -246,6 +263,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="549" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1633251637724" />
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1634061701169">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1634061701169" />
     <state x="1245" y="221" width="464" height="648" key="#com.intellij.ide.util.MemberChooser" timestamp="1633718060622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -274,22 +295,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1633106039001" />
-    <state width="1877" height="392" key="GridCell.Tab.0.bottom" timestamp="1633718549513">
+    <state width="1877" height="391" key="GridCell.Tab.0.bottom" timestamp="1634065283318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="392" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633718549513" />
-    <state width="1877" height="392" key="GridCell.Tab.0.center" timestamp="1633718549513">
+    <state width="1877" height="391" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1634065283318" />
+    <state width="1877" height="391" key="GridCell.Tab.0.center" timestamp="1634065283318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="392" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633718549513" />
-    <state width="1877" height="392" key="GridCell.Tab.0.left" timestamp="1633718549513">
+    <state width="1877" height="391" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1634065283318" />
+    <state width="1877" height="391" key="GridCell.Tab.0.left" timestamp="1634065283318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="392" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633718549513" />
-    <state width="1877" height="392" key="GridCell.Tab.0.right" timestamp="1633718549513">
+    <state width="1877" height="391" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1634065283318" />
+    <state width="1877" height="391" key="GridCell.Tab.0.right" timestamp="1634065283318">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="392" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633718549513" />
+    <state width="1877" height="391" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1634065283318" />
     <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1633717284002">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -326,6 +347,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="803" y="293" width="749" height="649" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1633100059316" />
+    <state x="347" y="148" key="new project wizard" timestamp="1633861878455">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="347" y="148" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1633861878455" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1632848624961">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
