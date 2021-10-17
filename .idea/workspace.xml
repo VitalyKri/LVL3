@@ -54,12 +54,20 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_COMMON_BRANCH" value="main" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/VitalyKri/JAVA.git" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1yjVteHWwLwjNX7T4mWPmiWXAjW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -75,12 +83,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target/classes" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -96,7 +105,20 @@
       <recent name="D:\Lesson\JAVA\Lesson\GB\JAVA\LVL3\src\main\resources\fxml" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Lesson6HomeworkTest.shouldCorrectCheckArrayWithOnesAndFours">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lesson7.Main" />
+      <module name="LVL3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lesson7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Lesson6HomeworkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LVL3" />
       <extension name="coverage">
@@ -144,21 +166,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MathOperationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LVL3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lesson6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Lesson6" />
-      <option name="MAIN_CLASS_NAME" value="Lesson6.MathOperationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MathOperationTest.testSumSuccessfillyCalculationWhenTwoValidDigitsPassed (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LVL3" />
       <extension name="coverage">
@@ -176,7 +183,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MathOperationTest" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.Lesson6HomeworkTest" />
       <item itemvalue="JUnit.Lesson6HomeworkTest.shouldgetFilteringArrayByOccurrenceFour" />
       <item itemvalue="JUnit.MathOperationTest.testSumSuccessfillyCalculationWhenTwoValidDigitsPassed (1)" />
@@ -184,11 +191,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.Lesson6HomeworkTest.shouldCorrectCheckArrayWithOnesAndFours" />
         <item itemvalue="JUnit.Lesson6HomeworkTest.shouldgetFilteringArrayByOccurrenceFour" />
         <item itemvalue="JUnit.MathOperationTest.testSumSuccessfillyCalculationWhenTwoValidDigitsPassed (1)" />
         <item itemvalue="JUnit.Lesson6HomeworkTest" />
-        <item itemvalue="JUnit.MathOperationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +223,9 @@
       <workItem from="1633616351772" duration="9975000" />
       <workItem from="1633713107365" duration="5247000" />
       <workItem from="1634058902498" duration="5133000" />
-      <workItem from="1634211260388" duration="10220000" />
+      <workItem from="1634211260388" duration="10543000" />
+      <workItem from="1634317930226" duration="6168000" />
+      <workItem from="1634468752589" duration="998000" />
     </task>
     <servers />
   </component>
@@ -234,7 +243,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="dev3" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -248,10 +257,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" width="816" height="729" key="#Intentions" timestamp="1632842463753">
+    <state x="586" y="198" key="#Inspections" timestamp="1634468842694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" width="816" height="729" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1632842463753" />
+    <state x="586" y="198" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1634468842694" />
+    <state x="552" y="131" width="816" height="909" key="#Intentions" timestamp="1634319258754">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="131" width="816" height="909" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1634319258754" />
     <state x="440" y="94" key="#Project_Structure" timestamp="1633103798275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -264,10 +277,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1634223555748" />
-    <state x="1245" y="221" width="464" height="648" key="#com.intellij.ide.util.MemberChooser" timestamp="1633718060622">
+    <state x="1245" y="221" width="464" height="648" key="#com.intellij.ide.util.MemberChooser" timestamp="1634320814626">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="221" width="464" height="648" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1633718060622" />
+    <state x="1245" y="221" width="464" height="648" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1634320814626" />
     <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1632766764992">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -292,38 +305,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1633106039001" />
-    <state width="1877" height="391" key="GridCell.Tab.0.bottom" timestamp="1634223798964">
+    <state width="914" height="390" key="GridCell.Tab.0.bottom" timestamp="1634324026587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="391" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1634223798964" />
-    <state width="1877" height="391" key="GridCell.Tab.0.center" timestamp="1634223798964">
+    <state width="914" height="390" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1634324026587" />
+    <state width="914" height="390" key="GridCell.Tab.0.center" timestamp="1634324026587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="391" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1634223798964" />
-    <state width="1877" height="391" key="GridCell.Tab.0.left" timestamp="1634223798964">
+    <state width="914" height="390" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1634324026587" />
+    <state width="914" height="390" key="GridCell.Tab.0.left" timestamp="1634324026587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="391" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1634223798964" />
-    <state width="1877" height="391" key="GridCell.Tab.0.right" timestamp="1634223798964">
+    <state width="914" height="390" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1634324026587" />
+    <state width="914" height="390" key="GridCell.Tab.0.right" timestamp="1634324026587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="391" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1634223798964" />
-    <state width="1877" height="342" key="GridCell.Tab.1.bottom" timestamp="1634223709382">
+    <state width="914" height="390" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1634324026587" />
+    <state width="1877" height="342" key="GridCell.Tab.1.bottom" timestamp="1634224696551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="342" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1634223709382" />
-    <state width="1877" height="342" key="GridCell.Tab.1.center" timestamp="1634223709382">
+    <state width="1877" height="342" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1634224696551" />
+    <state width="1877" height="342" key="GridCell.Tab.1.center" timestamp="1634224696551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="342" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1634223709382" />
-    <state width="1877" height="342" key="GridCell.Tab.1.left" timestamp="1634223709382">
+    <state width="1877" height="342" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1634224696551" />
+    <state width="1877" height="342" key="GridCell.Tab.1.left" timestamp="1634224696550">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="342" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1634223709382" />
-    <state width="1877" height="342" key="GridCell.Tab.1.right" timestamp="1634223709382">
+    <state width="1877" height="342" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1634224696550" />
+    <state width="1877" height="342" key="GridCell.Tab.1.right" timestamp="1634224696551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="342" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1634223709382" />
+    <state width="1877" height="342" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1634224696551" />
     <state width="208" height="471" key="HiddenNamespacesPopup" timestamp="1633099532720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -332,10 +345,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1633623890833" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1633251602179">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1634469252019">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1633251602179" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1634469252019" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1633156228591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -344,14 +357,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="803" y="293" width="749" height="649" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1633100059316" />
+    <state x="210" y="274" key="extract.method.dialog" timestamp="1634469321763">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="210" y="274" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1634469321763" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1634469124937">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1634469124937" />
     <state x="347" y="148" key="new project wizard" timestamp="1633861878455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="347" y="148" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1633861878455" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1632848624961">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1634469018326">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1632848624961" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1634469018326" />
+    <state x="808" y="234" width="672" height="678" key="search.everywhere.popup" timestamp="1634469704178">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="808" y="234" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1634469704178" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
