@@ -20,12 +20,12 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:dev3" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6144121f-170b-45b7-93e0-eccc9c80caff" name="Default Changelist" comment="">
+    <list default="true" id="6144121f-170b-45b7-93e0-eccc9c80caff" name="Default Changelist" comment="add classwork7">
       <change afterPath="$PROJECT_DIR$/../VTB1/src/main/java/base/Author.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../VTB1/src/main/java/base/Book.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../VTB1/src/main/java/base/Catalog.java" afterDir="false" />
@@ -43,6 +43,10 @@
       <change beforePath="$PROJECT_DIR$/../LVL2/homeworks/OnlineChat/server/AuthService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../LVL2/out/production/LVL2/Коллекция.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../LVL2/out/production/LVL2/Коллекция.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Lesson6/Homework/Lesson6HomeworkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Lesson6/Homework/Lesson6HomeworkTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lesson7/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Lesson7/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Lesson6/Homework/Lesson6HomeworkTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Lesson6/Homework/Lesson6HomeworkTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Lesson6/MathOperationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Lesson6/MathOperationTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +90,7 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/target/classes" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
@@ -191,10 +195,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MathOperationTest.testSumSuccessfillyCalculationWhenTwoValidDigitsPassed (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.Lesson6HomeworkTest.shouldCorrectCheckArrayWithOnesAndFours" />
         <item itemvalue="JUnit.Lesson6HomeworkTest.shouldgetFilteringArrayByOccurrenceFour" />
-        <item itemvalue="JUnit.MathOperationTest.testSumSuccessfillyCalculationWhenTwoValidDigitsPassed (1)" />
         <item itemvalue="JUnit.Lesson6HomeworkTest" />
       </list>
     </recent_temporary>
@@ -225,7 +229,13 @@
       <workItem from="1634058902498" duration="5133000" />
       <workItem from="1634211260388" duration="10543000" />
       <workItem from="1634317930226" duration="6168000" />
-      <workItem from="1634468752589" duration="998000" />
+      <workItem from="1634468752589" duration="1408000" />
+      <workItem from="1634473870854" duration="38000" />
+      <workItem from="1634474169092" duration="750000" />
+      <workItem from="1634477368461" duration="30000" />
+      <workItem from="1634484930831" duration="208000" />
+      <workItem from="1634487889721" duration="71000" />
+      <workItem from="1634489213037" duration="30000" />
     </task>
     <servers />
   </component>
@@ -256,6 +266,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add classwork7" />
+    <option name="LAST_COMMIT_MESSAGE" value="add classwork7" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1634468842694">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -265,10 +279,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="131" width="816" height="909" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1634319258754" />
-    <state x="440" y="94" key="#Project_Structure" timestamp="1633103798275">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1634484971867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1633103798275" />
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1634484971867" />
     <state x="549" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1633251637724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -305,38 +319,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1633106039001" />
-    <state width="914" height="390" key="GridCell.Tab.0.bottom" timestamp="1634324026587">
+    <state width="1877" height="342" key="GridCell.Tab.0.bottom" timestamp="1634487960350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="390" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1634324026587" />
-    <state width="914" height="390" key="GridCell.Tab.0.center" timestamp="1634324026587">
+    <state width="1877" height="342" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1634487960350" />
+    <state width="1877" height="342" key="GridCell.Tab.0.center" timestamp="1634487960350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="390" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1634324026587" />
-    <state width="914" height="390" key="GridCell.Tab.0.left" timestamp="1634324026587">
+    <state width="1877" height="342" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1634487960350" />
+    <state width="1877" height="342" key="GridCell.Tab.0.left" timestamp="1634487960350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="390" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1634324026587" />
-    <state width="914" height="390" key="GridCell.Tab.0.right" timestamp="1634324026587">
+    <state width="1877" height="342" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1634487960350" />
+    <state width="1877" height="342" key="GridCell.Tab.0.right" timestamp="1634487960350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="390" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1634324026587" />
-    <state width="1877" height="342" key="GridCell.Tab.1.bottom" timestamp="1634224696551">
+    <state width="1877" height="342" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1634487960350" />
+    <state width="1877" height="342" key="GridCell.Tab.1.bottom" timestamp="1634487960350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="342" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1634224696551" />
-    <state width="1877" height="342" key="GridCell.Tab.1.center" timestamp="1634224696551">
+    <state width="1877" height="342" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1634487960350" />
+    <state width="1877" height="342" key="GridCell.Tab.1.center" timestamp="1634487960350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="342" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1634224696551" />
-    <state width="1877" height="342" key="GridCell.Tab.1.left" timestamp="1634224696550">
+    <state width="1877" height="342" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1634487960350" />
+    <state width="1877" height="342" key="GridCell.Tab.1.left" timestamp="1634487960350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="342" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1634224696550" />
-    <state width="1877" height="342" key="GridCell.Tab.1.right" timestamp="1634224696551">
+    <state width="1877" height="342" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1634487960350" />
+    <state width="1877" height="342" key="GridCell.Tab.1.right" timestamp="1634487960350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="342" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1634224696551" />
+    <state width="1877" height="342" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1634487960350" />
     <state width="208" height="471" key="HiddenNamespacesPopup" timestamp="1633099532720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -365,10 +379,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1634469124937" />
-    <state x="347" y="148" key="new project wizard" timestamp="1633861878455">
+    <state x="347" y="148" key="new project wizard" timestamp="1634470173857">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="347" y="148" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1633861878455" />
+    <state x="347" y="148" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1634470173857" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1634469018326">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
